@@ -29,7 +29,7 @@ import me.prettyprint.hector.api.query.QueryResult;
 import me.prettyprint.hector.api.query.RangeSlicesQuery;
 import me.prettyprint.hector.api.query.SliceQuery;
 
-public class CassandraDataExtracter {
+public class CassandraDataExtracterHector {
 
 	// The string serializer translates the byte[] to and from String using
 	// utf-8 encoding
@@ -49,13 +49,13 @@ public class CassandraDataExtracter {
 	}
 
 	public static void main(String[] args) {
-		CassandraDataExtracter sample = new CassandraDataExtracter();
+		CassandraDataExtracterHector sample = new CassandraDataExtracterHector();
 		sample.getConfig();
 	    sample.readObject();
 }
 	
 	public void addStudents(String id,String name){
-		CassandraDataExtracter sample = new CassandraDataExtracter();
+		CassandraDataExtracterHector sample = new CassandraDataExtracterHector();
 		Student student1 = new Student();
 		student1.setId(id);
 		student1.setName(name);
